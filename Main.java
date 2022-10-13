@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 class Main {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws FileNotFoundException {
     ArrayList<String> arrayList = new ArrayList<>();
     try {
 
@@ -25,19 +25,19 @@ class Main {
     System.out.println("Press 5 to quit.");
 
     Scanner option = new Scanner(System.in);
-    int x = option.nextInt();
-    while (x < 5) {
+    String x = option.next();
+    while (Integer.parseInt(x) < 5) {
 
-      if (x == 1) {
+      if (Integer.parseInt(x) == 1) {
         System.out.println("$98,345 average salary in South Florida!");
       }
-      if (x == 2) {
+      if (Integer.parseInt(x) == 2) {
         System.out.println("US News - 100 Best Jobs!");
       }
-      if (x == 3) {
+      if (Integer.parseInt(x) == 3) {
         System.out.println("Top 10 Forbes In-Demand Jobs!");
       }
-      if (x == 4) {
+      if (Integer.parseInt(x) == 4) {
         for (int i = 0; i < arrayList.size(); i++) {
           System.out.println(arrayList.get(i));
 
@@ -51,9 +51,8 @@ class Main {
       System.out.println("Press 4 to view current students.");
       System.out.println("Press 5 to quit.");
       option = new Scanner(System.in);
-      x = option.nextInt();
+     x = option.next();
     }
     option.close();
-    
   }
 }
