@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 class Main {
-  public static void main(String[] args) throws FileNotFoundException {
+  public static void main(String[] args) {
     ArrayList<String> arrayList = new ArrayList<>();
     try {
 
@@ -14,7 +14,8 @@ class Main {
         arrayList.add(fileScanner.nextLine());
 
       }
-      } catch (FileNotFoundException error) {
+      fileScanner.close();
+    } catch (FileNotFoundException error) {
 
     }
     System.out.println("Press 1 to learn about salary.");
@@ -52,6 +53,7 @@ class Main {
       option = new Scanner(System.in);
       x = option.nextInt();
     }
-      
+    option.close();
+    
   }
 }
