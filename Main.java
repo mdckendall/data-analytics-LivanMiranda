@@ -14,7 +14,7 @@ class Main {
         arrayList.add(fileScanner.nextLine());
 
       }
-    fileScanner.close();
+      fileScanner.close();
     } catch (FileNotFoundException error) {
 
     }
@@ -23,11 +23,11 @@ class Main {
     System.out.println("Press 3 to learn about demand.");
     System.out.println("Press 4 to view current students.");
     System.out.println("Press 5 to quit.");
-    
+
     Scanner option = new Scanner(System.in);
-   int x = option.nextInt();
-    while (x< 5) {
-      
+    int x = option.nextInt();
+    while (x < 5) {
+
       if (x == 1) {
         System.out.println("$98,345 average salary in South Florida!");
       }
@@ -42,14 +42,18 @@ class Main {
           System.out.println(arrayList.get(i));
 
         }
+
       }
-      
-    option = new Scanner(System.in);
+
+      System.out.println("Press 1 to learn about salary.");
+      System.out.println("Press 2 to learn about the job.");
+      System.out.println("Press 3 to learn about demand.");
+      System.out.println("Press 4 to view current students.");
+      System.out.println("Press 5 to quit.");
+      option = new Scanner(System.in);
       x = option.nextInt();
     }
-      option.close();
+    option.close();
     System.exit(0);
-    }
   }
-
-
+}
