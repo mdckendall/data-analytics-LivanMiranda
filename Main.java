@@ -14,8 +14,9 @@ class Main {
         arrayList.add(fileScanner.nextLine());
 
       }
-      fileScanner.close();
-    } catch (FileNotFoundException error) {
+     
+    } 
+    catch (FileNotFoundException error) {
 
     }
     System.out.println("Press 1 to learn about salary.");
@@ -55,6 +56,6 @@ class Main {
      x = option.next();
     }
     }
-    option.close();
+    
   }
 }
