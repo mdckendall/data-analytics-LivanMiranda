@@ -54,6 +54,6 @@ class Main {
       x = option.nextInt();
     }
     option.close();
-    System.exit(0);
+    
   }
 }
