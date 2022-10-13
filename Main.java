@@ -25,6 +25,7 @@ class Main {
     System.out.println("Press 5 to quit.");
 
     Scanner option = new Scanner(System.in);
+    if(option.hasNext()){
     String x = option.nextLine();
     while (Integer.parseInt(x) < 5) {
 
@@ -52,6 +53,7 @@ class Main {
       System.out.println("Press 5 to quit.");
       option = new Scanner(System.in);
      x = option.next();
+    }
     }
     option.close();
   }
