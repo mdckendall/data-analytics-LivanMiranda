@@ -55,7 +55,7 @@ class Main {
       System.out.println("Press 3 to learn about demand.");
       System.out.println("Press 4 to view current students.");
       System.out.println("Press 5 to quit.");
-      option = new Scanner(System.in);
+      //option = new Scanner(System.in);
      x = option.nextInt();
     
     }
