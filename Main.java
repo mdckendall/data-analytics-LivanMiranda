@@ -40,6 +40,7 @@ class Main {
         System.out.println("Top 10 Forbes In-Demand Jobs!");
       }
       if (x == 4) {
+        System.out.println("Current Students:");
         for (int i = 0; i < arrayList.size(); i++) {
           System.out.println(arrayList.get(i));
 
@@ -55,8 +56,8 @@ class Main {
       System.out.println("Press 3 to learn about demand.");
       System.out.println("Press 4 to view current students.");
       System.out.println("Press 5 to quit.");
-      //option = new Scanner(System.in);
-     x = option.nextInt();
+         
+      x = option.nextInt();
     
     }
     
