@@ -2,6 +2,7 @@ import java.io.FileReader;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.lang.*; 
 
 class Main {
   public static void main(String[] args) throws FileNotFoundException {
@@ -26,25 +27,27 @@ class Main {
     System.out.println("Press 5 to quit.");
 
     Scanner option = new Scanner(System.in);
-    if(option.hasNext()){
-    String x = option.nextLine();
-    while (Integer.parseInt(x) < 5) {
+    int x = option.nextInt();
+    while (option.hasNextLine()) {
 
-      if (Integer.parseInt(x) == 1) {
+      if (x == 1) {
         System.out.println("$98,345 average salary in South Florida!");
       }
-      if (Integer.parseInt(x) == 2) {
+      if (x == 2) {
         System.out.println("US News - 100 Best Jobs!");
       }
-      if (Integer.parseInt(x) == 3) {
+      if (x == 3) {
         System.out.println("Top 10 Forbes In-Demand Jobs!");
       }
-      if (Integer.parseInt(x) == 4) {
+      if (x == 4) {
         for (int i = 0; i < arrayList.size(); i++) {
           System.out.println(arrayList.get(i));
 
         }
 
+      }
+      if(x > 4){
+        System.exit(0);
       }
 
       System.out.println("Press 1 to learn about salary.");
@@ -53,8 +56,8 @@ class Main {
       System.out.println("Press 4 to view current students.");
       System.out.println("Press 5 to quit.");
       option = new Scanner(System.in);
-     x = option.next();
-    }
+     x = option.nextInt();
+    
     }
     
   }
